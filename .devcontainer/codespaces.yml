@@ -1,3 +1,4 @@
+version: "3"
 services:
   windows:
     container_name: windows
@@ -7,6 +8,7 @@ services:
       DISK_SIZE: "max"
       CPU_CORES: "max"
       DISK_MINIMUM: "1G"
+      MOUSE: "usb-tablet"
     devices:
       - /dev/kvm
       - /dev/net/tun
